@@ -111,39 +111,6 @@
     rotationAnimation.repeatCount = 7;
     
     [clockHands.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
-    
-//    if (!loading)
-//        return;
-//    
-//    [UIView animateWithDuration:0.7 animations:^{
-//        clockHands.transform = CGAffineTransformMakeRotation(90 * M_PI / 180.0);
-//    } completion:^(BOOL finished) {
-//        [self moveClockHands];
-//    }];
-    
-//    handsAngle += 0.1;
-//    clockHands.transform = CGAffineTransformRotate(CGAffineTransformIdentity, handsAngle);
-//    
-//    
-////    return;
-//    
-////    timeIntervalSpinningClockHands += 0.0001;
-//    
-//    [timerForSpinningClockHands invalidate];
-//    timerForSpinningClockHands = nil;
-//    
-//    timerForSpinningClockHands = [NSTimer scheduledTimerWithTimeInterval:timeIntervalSpinningClockHands
-//                                                                  target:self
-//                                                                selector:@selector(moveClockHands)
-//                                                                userInfo:nil
-//                                                                 repeats:NO];
-//    return;
-    
-//    double delayInSeconds = timeIntervalSpinningClockHands;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        [self moveClockHands];
-//    });
 }
 
 @end
