@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0305EA42177E3D9300FAF556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA41177E3D9300FAF556 /* UIKit.framework */; };
+		0305EA44177E3D9300FAF556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA43177E3D9300FAF556 /* Foundation.framework */; };
+		0305EA46177E3D9300FAF556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA45177E3D9300FAF556 /* CoreGraphics.framework */; };
+		0305EA48177E3D9300FAF556 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA47177E3D9300FAF556 /* CoreData.framework */; };
+		0305EA4E177E3D9300FAF556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA4C177E3D9300FAF556 /* InfoPlist.strings */; };
+		0305EA50177E3D9300FAF556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA4F177E3D9300FAF556 /* main.m */; };
+		0305EA54177E3D9300FAF556 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA53177E3D9300FAF556 /* JSAppDelegate.m */; };
+		0305EA56177E3D9300FAF556 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA55177E3D9300FAF556 /* Default.png */; };
+		0305EA58177E3D9300FAF556 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA57177E3D9300FAF556 /* Default@2x.png */; };
+		0305EA5A177E3D9300FAF556 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA59177E3D9300FAF556 /* Default-568h@2x.png */; };
+		0305EA65177E3DF000FAF556 /* JSClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA64177E3DF000FAF556 /* JSClock.m */; };
+		0305EA68177E3DF800FAF556 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0305EA6B177E3EE600FAF556 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA6A177E3EE600FAF556 /* QuartzCore.framework */; };
+		0305EA6E177E3EFA00FAF556 /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA6D177E3EFA00FAF556 /* JSTableViewController.m */; };
+		0305EA71177E3FA700FAF556 /* merge-clock-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */; };
+		0305EA72177E3FA700FAF556 /* merge-clock-hands@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0305EA3E177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock-Pull-To-Refresh-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0305EA41177E3D9300FAF556 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0305EA43177E3D9300FAF556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0305EA45177E3D9300FAF556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0305EA47177E3D9300FAF556 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0305EA4B177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock-Pull-To-Refresh-Demo-Info.plist"; sourceTree = "<group>"; };
+		0305EA4D177E3D9300FAF556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0305EA4F177E3D9300FAF556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0305EA51177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clock-Pull-To-Refresh-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		0305EA52177E3D9300FAF556 /* JSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSAppDelegate.h; sourceTree = "<group>"; };
+		0305EA53177E3D9300FAF556 /* JSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSAppDelegate.m; sourceTree = "<group>"; };
+		0305EA55177E3D9300FAF556 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0305EA57177E3D9300FAF556 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0305EA59177E3D9300FAF556 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0305EA63177E3DF000FAF556 /* JSClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClock.h; sourceTree = "<group>"; };
+		0305EA64177E3DF000FAF556 /* JSClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClock.m; sourceTree = "<group>"; };
+		0305EA66177E3DF800FAF556 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		0305EA6A177E3EE600FAF556 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0305EA6C177E3EFA00FAF556 /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
+		0305EA6D177E3EFA00FAF556 /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
+		0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "merge-clock-background@2x.png"; sourceTree = "<group>"; };
+		0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "merge-clock-hands@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0305EA3B177E3D9300FAF556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0305EA6B177E3EE600FAF556 /* QuartzCore.framework in Frameworks */,
+				0305EA42177E3D9300FAF556 /* UIKit.framework in Frameworks */,
+				0305EA44177E3D9300FAF556 /* Foundation.framework in Frameworks */,
+				0305EA46177E3D9300FAF556 /* CoreGraphics.framework in Frameworks */,
+				0305EA48177E3D9300FAF556 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0305EA35177E3D9300FAF556 = {
+			isa = PBXGroup;
+			children = (
+				0305EA6A177E3EE600FAF556 /* QuartzCore.framework */,
+				0305EA49177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo */,
+				0305EA40177E3D9300FAF556 /* Frameworks */,
+				0305EA3F177E3D9300FAF556 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0305EA3F177E3D9300FAF556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0305EA3E177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0305EA40177E3D9300FAF556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0305EA41177E3D9300FAF556 /* UIKit.framework */,
+				0305EA43177E3D9300FAF556 /* Foundation.framework */,
+				0305EA45177E3D9300FAF556 /* CoreGraphics.framework */,
+				0305EA47177E3D9300FAF556 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0305EA49177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0305EA52177E3D9300FAF556 /* JSAppDelegate.h */,
+				0305EA53177E3D9300FAF556 /* JSAppDelegate.m */,
+				0305EA6C177E3EFA00FAF556 /* JSTableViewController.h */,
+				0305EA6D177E3EFA00FAF556 /* JSTableViewController.m */,
+				0305EA69177E3E3000FAF556 /* Clock Pull To Refresh */,
+				0305EA4A177E3D9300FAF556 /* Supporting Files */,
+			);
+			path = "Clock-Pull-To-Refresh-Demo";
+			sourceTree = "<group>";
+		};
+		0305EA4A177E3D9300FAF556 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */,
+				0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */,
+				0305EA4B177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo-Info.plist */,
+				0305EA4C177E3D9300FAF556 /* InfoPlist.strings */,
+				0305EA4F177E3D9300FAF556 /* main.m */,
+				0305EA51177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo-Prefix.pch */,
+				0305EA55177E3D9300FAF556 /* Default.png */,
+				0305EA57177E3D9300FAF556 /* Default@2x.png */,
+				0305EA59177E3D9300FAF556 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0305EA69177E3E3000FAF556 /* Clock Pull To Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				0305EA66177E3DF800FAF556 /* EGORefreshTableHeaderView.h */,
+				0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */,
+				0305EA63177E3DF000FAF556 /* JSClock.h */,
+				0305EA64177E3DF000FAF556 /* JSClock.m */,
+			);
+			name = "Clock Pull To Refresh";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0305EA3D177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0305EA60177E3D9300FAF556 /* Build configuration list for PBXNativeTarget "Clock-Pull-To-Refresh-Demo" */;
+			buildPhases = (
+				0305EA3A177E3D9300FAF556 /* Sources */,
+				0305EA3B177E3D9300FAF556 /* Frameworks */,
+				0305EA3C177E3D9300FAF556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clock-Pull-To-Refresh-Demo";
+			productName = "Clock-Pull-To-Refresh-Demo";
+			productReference = 0305EA3E177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0305EA36177E3D9300FAF556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Josh Sklar";
+			};
+			buildConfigurationList = 0305EA39177E3D9300FAF556 /* Build configuration list for PBXProject "Clock-Pull-To-Refresh-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0305EA35177E3D9300FAF556;
+			productRefGroup = 0305EA3F177E3D9300FAF556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0305EA3D177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0305EA3C177E3D9300FAF556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0305EA4E177E3D9300FAF556 /* InfoPlist.strings in Resources */,
+				0305EA56177E3D9300FAF556 /* Default.png in Resources */,
+				0305EA58177E3D9300FAF556 /* Default@2x.png in Resources */,
+				0305EA5A177E3D9300FAF556 /* Default-568h@2x.png in Resources */,
+				0305EA71177E3FA700FAF556 /* merge-clock-background@2x.png in Resources */,
+				0305EA72177E3FA700FAF556 /* merge-clock-hands@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0305EA3A177E3D9300FAF556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0305EA50177E3D9300FAF556 /* main.m in Sources */,
+				0305EA54177E3D9300FAF556 /* JSAppDelegate.m in Sources */,
+				0305EA65177E3DF000FAF556 /* JSClock.m in Sources */,
+				0305EA68177E3DF800FAF556 /* EGORefreshTableHeaderView.m in Sources */,
+				0305EA6E177E3EFA00FAF556 /* JSTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0305EA4C177E3D9300FAF556 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0305EA4D177E3D9300FAF556 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0305EA5E177E3D9300FAF556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0305EA5F177E3D9300FAF556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0305EA61177E3D9300FAF556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock-Pull-To-Refresh-Demo/Clock-Pull-To-Refresh-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Clock-Pull-To-Refresh-Demo/Clock-Pull-To-Refresh-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0305EA62177E3D9300FAF556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock-Pull-To-Refresh-Demo/Clock-Pull-To-Refresh-Demo-Prefix.pch";
+				INFOPLIST_FILE = "Clock-Pull-To-Refresh-Demo/Clock-Pull-To-Refresh-Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0305EA39177E3D9300FAF556 /* Build configuration list for PBXProject "Clock-Pull-To-Refresh-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0305EA5E177E3D9300FAF556 /* Debug */,
+				0305EA5F177E3D9300FAF556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0305EA60177E3D9300FAF556 /* Build configuration list for PBXNativeTarget "Clock-Pull-To-Refresh-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0305EA61177E3D9300FAF556 /* Debug */,
+				0305EA62177E3D9300FAF556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0305EA36177E3D9300FAF556 /* Project object */;
+}
