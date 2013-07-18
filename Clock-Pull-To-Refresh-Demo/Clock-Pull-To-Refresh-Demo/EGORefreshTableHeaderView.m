@@ -25,31 +25,28 @@
 //
 
 #import "EGORefreshTableHeaderView.h"
+#import "JSPullToRefreshClock.h"
 
-#define kPullLength 70.0f
+#define kPullLength 64.0f
 
-#define TEXT_COLOR	 [UIColor colorWithRed:87.0/255.0 green:108.0/255.0 blue:137.0/255.0 alpha:1.0]
-#define FLIP_ANIMATION_DURATION 0.18f
+@interface EGORefreshTableHeaderView ()
 
-
-@interface EGORefreshTableHeaderView (Private)
 - (void)setState:(EGOPullRefreshState)aState;
+
 @end
 
 @implementation EGORefreshTableHeaderView
 
-@synthesize delegate=_delegate;
-
-
-- (id)initWithFrame:(CGRect)frame {
+- (id)initWithFrame:(CGRect)frame
+{
     if (self = [super initWithFrame:frame]) {
 		
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-
+        
         [self setBackgroundColor:[UIColor orangeColor]];
         
         
-        clock = [[JSClock alloc]initWithFrame:CGRectMake((frame.size.width - 50.0f) / 2.0f, 10 + frame.size.height - kPullLength, 50.0f, 50.0f)];
+        clock = [[JSPullToRefreshClock alloc]initWithFrame:CGRectMake((frame.size.width - 50.0f) / 2.0f, (kPullLength - 50)/2 + frame.size.height - kPullLength, 50.0f, 50.0f)];
         [self addSubview:clock];
 		
 		[self setState:EGOOPullRefreshNormal];
@@ -57,20 +54,14 @@
         scrollViewPreviousContentOffset = 0;
 		
     }
-	
     return self;
-	
 }
 
 
-#pragma mark -
-#pragma mark Setters
+#pragma mark - Setters
 
-- (void)refreshLastUpdatedDate {
-}
-
-- (void)setState:(EGOPullRefreshState)aState{
-	
+- (void)setState:(EGOPullRefreshState)aState
+{	
 	switch (aState) {
 		case EGOOPullRefreshPulling:
 			break;
@@ -88,22 +79,22 @@
 }
 
 
-#pragma mark -
-#pragma mark ScrollView Methods
+#pragma mark - ScrollView Methods
 
-- (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView {	
-	
+- (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat val = scrollView.contentOffset.y - scrollViewPreviousContentOffset;
+    if (val <= 0.) val *= -1.;
+    
     if (scrollView.contentOffset.y < scrollViewPreviousContentOffset) {
-//        NSLog(@"down");
-        [clock scrollViewDidScrollDown];
+        [clock scrollViewDidScrollDown:val];
     }
     else {
-//        NSLog(@"up");
-        [clock scrollViewDidScrollUp];
+        [clock scrollViewDidScrollUp:val];
     }
+    
     scrollViewPreviousContentOffset = scrollView.contentOffset.y;
     
-
 	if (_state == EGOOPullRefreshLoading) {
 		
 		CGFloat offset = MAX(scrollView.contentOffset.y * -1, 0);
@@ -128,11 +119,10 @@
 		}
 		
 	}
-	
 }
 
-- (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView {
-	
+- (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView
+{	
 	BOOL _loading = NO;
 	if ([_delegate respondsToSelector:@selector(egoRefreshTableHeaderDataSourceIsLoading:)]) {
 		_loading = [_delegate egoRefreshTableHeaderDataSourceIsLoading:self];
@@ -147,14 +137,14 @@
 		[self setState:EGOOPullRefreshLoading];
 		[UIView beginAnimations:nil context:NULL];
 		[UIView setAnimationDuration:0.2];
-		scrollView.contentInset = UIEdgeInsetsMake(60.0f, 0.0f, 0.0f, 0.0f);
+		scrollView.contentInset = UIEdgeInsetsMake(kPullLength, 0.0f, 0.0f, 0.0f);
 		[UIView commitAnimations];
 		
 	}
 	
 }
 
-- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {	
+- (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView {
 	
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationDuration:.3];
@@ -162,19 +152,17 @@
 	[UIView commitAnimations];
 	
 	[self setState:EGOOPullRefreshNormal];
-
+    
 }
 
 
-#pragma mark -
-#pragma mark Dealloc
+#pragma mark - Dealloc
 
 - (void)dealloc {
 	
 	_delegate=nil;
-
+    
     [super dealloc];
 }
-
 
 @end

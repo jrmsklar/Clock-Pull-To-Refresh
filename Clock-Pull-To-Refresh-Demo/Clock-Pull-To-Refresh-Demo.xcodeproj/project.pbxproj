@@ -17,12 +17,13 @@
 		0305EA56177E3D9300FAF556 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA55177E3D9300FAF556 /* Default.png */; };
 		0305EA58177E3D9300FAF556 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA57177E3D9300FAF556 /* Default@2x.png */; };
 		0305EA5A177E3D9300FAF556 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA59177E3D9300FAF556 /* Default-568h@2x.png */; };
-		0305EA65177E3DF000FAF556 /* JSClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA64177E3DF000FAF556 /* JSClock.m */; };
 		0305EA68177E3DF800FAF556 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0305EA6B177E3EE600FAF556 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0305EA6A177E3EE600FAF556 /* QuartzCore.framework */; };
 		0305EA6E177E3EFA00FAF556 /* JSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0305EA6D177E3EFA00FAF556 /* JSTableViewController.m */; };
-		0305EA71177E3FA700FAF556 /* merge-clock-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */; };
-		0305EA72177E3FA700FAF556 /* merge-clock-hands@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */; };
+		0305EA71177E3FA700FAF556 /* clock-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0305EA6F177E3FA700FAF556 /* clock-background@2x.png */; };
+		032C2E4A179753E20035089E /* minute-hand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 032C2E48179753E20035089E /* minute-hand@2x.png */; };
+		032C2E4B179753E20035089E /* hour-hand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 032C2E49179753E20035089E /* hour-hand@2x.png */; };
+		032C2E4E179754440035089E /* JSPullToRefreshClock.m in Sources */ = {isa = PBXBuildFile; fileRef = 032C2E4D179754440035089E /* JSPullToRefreshClock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,15 +41,16 @@
 		0305EA55177E3D9300FAF556 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0305EA57177E3D9300FAF556 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0305EA59177E3D9300FAF556 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0305EA63177E3DF000FAF556 /* JSClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSClock.h; sourceTree = "<group>"; };
-		0305EA64177E3DF000FAF556 /* JSClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSClock.m; sourceTree = "<group>"; };
 		0305EA66177E3DF800FAF556 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
 		0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
 		0305EA6A177E3EE600FAF556 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0305EA6C177E3EFA00FAF556 /* JSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTableViewController.h; sourceTree = "<group>"; };
 		0305EA6D177E3EFA00FAF556 /* JSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTableViewController.m; sourceTree = "<group>"; };
-		0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "merge-clock-background@2x.png"; sourceTree = "<group>"; };
-		0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "merge-clock-hands@2x.png"; sourceTree = "<group>"; };
+		0305EA6F177E3FA700FAF556 /* clock-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock-background@2x.png"; sourceTree = "<group>"; };
+		032C2E48179753E20035089E /* minute-hand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minute-hand@2x.png"; sourceTree = "<group>"; };
+		032C2E49179753E20035089E /* hour-hand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hour-hand@2x.png"; sourceTree = "<group>"; };
+		032C2E4C179754440035089E /* JSPullToRefreshClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPullToRefreshClock.h; sourceTree = "<group>"; };
+		032C2E4D179754440035089E /* JSPullToRefreshClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPullToRefreshClock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,6 @@
 		0305EA35177E3D9300FAF556 = {
 			isa = PBXGroup;
 			children = (
-				0305EA6A177E3EE600FAF556 /* QuartzCore.framework */,
 				0305EA49177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo */,
 				0305EA40177E3D9300FAF556 /* Frameworks */,
 				0305EA3F177E3D9300FAF556 /* Products */,
@@ -88,6 +89,7 @@
 		0305EA40177E3D9300FAF556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0305EA6A177E3EE600FAF556 /* QuartzCore.framework */,
 				0305EA41177E3D9300FAF556 /* UIKit.framework */,
 				0305EA43177E3D9300FAF556 /* Foundation.framework */,
 				0305EA45177E3D9300FAF556 /* CoreGraphics.framework */,
@@ -112,8 +114,9 @@
 		0305EA4A177E3D9300FAF556 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0305EA6F177E3FA700FAF556 /* merge-clock-background@2x.png */,
-				0305EA70177E3FA700FAF556 /* merge-clock-hands@2x.png */,
+				032C2E48179753E20035089E /* minute-hand@2x.png */,
+				032C2E49179753E20035089E /* hour-hand@2x.png */,
+				0305EA6F177E3FA700FAF556 /* clock-background@2x.png */,
 				0305EA4B177E3D9300FAF556 /* Clock-Pull-To-Refresh-Demo-Info.plist */,
 				0305EA4C177E3D9300FAF556 /* InfoPlist.strings */,
 				0305EA4F177E3D9300FAF556 /* main.m */,
@@ -130,8 +133,8 @@
 			children = (
 				0305EA66177E3DF800FAF556 /* EGORefreshTableHeaderView.h */,
 				0305EA67177E3DF800FAF556 /* EGORefreshTableHeaderView.m */,
-				0305EA63177E3DF000FAF556 /* JSClock.h */,
-				0305EA64177E3DF000FAF556 /* JSClock.m */,
+				032C2E4C179754440035089E /* JSPullToRefreshClock.h */,
+				032C2E4D179754440035089E /* JSPullToRefreshClock.m */,
 			);
 			name = "Clock Pull To Refresh";
 			sourceTree = "<group>";
@@ -192,8 +195,9 @@
 				0305EA56177E3D9300FAF556 /* Default.png in Resources */,
 				0305EA58177E3D9300FAF556 /* Default@2x.png in Resources */,
 				0305EA5A177E3D9300FAF556 /* Default-568h@2x.png in Resources */,
-				0305EA71177E3FA700FAF556 /* merge-clock-background@2x.png in Resources */,
-				0305EA72177E3FA700FAF556 /* merge-clock-hands@2x.png in Resources */,
+				0305EA71177E3FA700FAF556 /* clock-background@2x.png in Resources */,
+				032C2E4A179753E20035089E /* minute-hand@2x.png in Resources */,
+				032C2E4B179753E20035089E /* hour-hand@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +210,9 @@
 			files = (
 				0305EA50177E3D9300FAF556 /* main.m in Sources */,
 				0305EA54177E3D9300FAF556 /* JSAppDelegate.m in Sources */,
-				0305EA65177E3DF000FAF556 /* JSClock.m in Sources */,
 				0305EA68177E3DF800FAF556 /* EGORefreshTableHeaderView.m in Sources */,
 				0305EA6E177E3EFA00FAF556 /* JSTableViewController.m in Sources */,
+				032C2E4E179754440035089E /* JSPullToRefreshClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 				0305EA62177E3D9300FAF556 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

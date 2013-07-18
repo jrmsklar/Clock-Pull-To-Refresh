@@ -26,7 +26,6 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-#import "JSClock.h"
 
 typedef enum{
 	EGOOPullRefreshPulling = 0,
@@ -34,27 +33,33 @@ typedef enum{
 	EGOOPullRefreshLoading,	
 } EGOPullRefreshState;
 
+@class JSPullToRefreshClock;
+
 @protocol EGORefreshTableHeaderDelegate;
+
 @interface EGORefreshTableHeaderView : UIView {
 	
 	id _delegate;
 	EGOPullRefreshState _state;
 	
     CGFloat scrollViewPreviousContentOffset;
-    JSClock *clock;
+    JSPullToRefreshClock *clock;
 }
 
 @property(nonatomic,assign) id <EGORefreshTableHeaderDelegate> delegate;
 
-- (void)refreshLastUpdatedDate;
 - (void)egoRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDidEndDragging:(UIScrollView *)scrollView;
 - (void)egoRefreshScrollViewDataSourceDidFinishedLoading:(UIScrollView *)scrollView;
 
 @end
+
 @protocol EGORefreshTableHeaderDelegate
+
 - (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view;
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view;
+
 @optional
 - (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view;
+
 @end
