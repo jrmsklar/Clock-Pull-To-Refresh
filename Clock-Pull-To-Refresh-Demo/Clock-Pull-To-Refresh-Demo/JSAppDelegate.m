@@ -16,7 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[JSTableViewController alloc]init];
+    UINavigationController *navCont = [[UINavigationController alloc]initWithRootViewController:[[JSTableViewController alloc]init]];
+    self.window.rootViewController = navCont;
     [self.window makeKeyAndVisible];
     return YES;
 }
