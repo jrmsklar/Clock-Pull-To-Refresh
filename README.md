@@ -3,12 +3,12 @@ Clock-Pull-To-Refresh
 
 **Pull to refresh class of a clock animating in all different types of ways.**
 
-This utilizes a third party pull to refresh API (`EGORefreshTableHeaderView`), in addition with a newly created class (`JSPullToRefreshClock`),
+This utilizes a third party pull to refresh API (`EGORefreshTableHeaderView`), in addition to a newly created class (`JSPullToRefreshClock`),
 to present a cool and fun pull to refresh animation.
 
 When the `UITableView` in which the `JSPullToRefreshClock` is added to is pulled downwards, the minute and hour hands of the clock animate towards the noon position of the clock, and when pulled up, the minute and hour hands of the clock animate towards the 6 o'clock position of the clock.
 
-When released, the clock hands both rotate counter clockwise at different rates, indicating that the data is loading.
+When released, the clock hands both rotate clockwise at different rates, indicating that the data is loading.
 
 ## Usage
 
