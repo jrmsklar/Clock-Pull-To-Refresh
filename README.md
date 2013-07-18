@@ -1,7 +1,7 @@
 Clock-Pull-To-Refresh
 =====================
 
-Cool clock pull-to-refresh animation
+Pull to refresh class of a clock animating in all different types of ways.
 
 This utilizes a third party pull to refresh API (EGORefreshTableHeaderView), in addition with a newly created class (JSPullToRefreshClock),
 to present a cool and fun pull to refresh animation.
