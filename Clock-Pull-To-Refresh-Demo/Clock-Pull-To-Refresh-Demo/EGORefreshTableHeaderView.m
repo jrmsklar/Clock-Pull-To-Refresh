@@ -43,7 +43,7 @@
 		
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         
-        [self setBackgroundColor:[UIColor orangeColor]];
+        [self setBackgroundColor:[UIColor blackColor]];
         
         
         clock = [[JSPullToRefreshClock alloc]initWithFrame:CGRectMake((frame.size.width - 50.0f) / 2.0f, (kPullLength - 50)/2 + frame.size.height - kPullLength, 50.0f, 50.0f)];

@@ -46,7 +46,7 @@ static NSString *kHourHandRotationAnimationKey = @"hourHandRotation";
         minuteHandAngle = hourHandAngle = 0;
         
         clockBackground = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-        [clockBackground setImage:[UIImage imageNamed:@"merge-clock-background"]];
+        [clockBackground setImage:[UIImage imageNamed:@"clock-background"]];
         [self addSubview:clockBackground];
         
         minuteHand = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
