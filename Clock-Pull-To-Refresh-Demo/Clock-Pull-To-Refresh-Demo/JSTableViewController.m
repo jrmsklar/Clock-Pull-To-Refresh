@@ -39,6 +39,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"Title";
     
     [self setupTableView];
     [self setupPullToRefresh];
@@ -124,15 +125,13 @@
         /* call doneLoadingTableViewData after data is fetched */
         [self doneLoadingTableViewData];
     });
-    
-	//  should be calling your tableviews data source model to reload
-	//  put here just for demo
+
 	_reloading = YES;
 }
 
 - (void)doneLoadingTableViewData
 {
-	//  model should call this when its done loading
+	/* model should call this when its done loading */
 	_reloading = NO;
 	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.tableView];
 }
@@ -159,7 +158,8 @@
 
 - (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view
 {
-	return _reloading; // should return if data source model is reloading
+    /* should return if data source model is reloading */
+	return _reloading;
 }
 
 @end

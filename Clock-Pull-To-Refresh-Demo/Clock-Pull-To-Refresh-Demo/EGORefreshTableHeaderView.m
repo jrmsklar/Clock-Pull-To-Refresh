@@ -69,7 +69,6 @@
 			[clock stopAnimatingClockHands];
 			break;
 		case EGOOPullRefreshLoading:
-            // start animating only the minute/hour hand around the clock
             [clock startAnimatingClockHands];
 			break;
 		default:

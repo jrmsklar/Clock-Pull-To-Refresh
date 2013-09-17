@@ -37,6 +37,8 @@ static NSString *kHourHandRotationAnimationKey = @"hourHandRotation";
 
 @implementation JSPullToRefreshClock
 
+#pragma mark - External methods
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
