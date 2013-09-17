@@ -12,7 +12,7 @@ When released, the clock hands both rotate clockwise at different rates, indicat
 
 ## Usage
 
-Simply add the following code to whichever file the `UITableView` in which you wish to add the `JSPullToRefreshClock` to is implemented.
+Simply add the following code to whichever file the `UITableView` is in which you wish to add the `JSPullToRefreshClock` to is implemented.
 
 Add the following directly after the instantiation of the `UITableView`:
 ``` objective-c
