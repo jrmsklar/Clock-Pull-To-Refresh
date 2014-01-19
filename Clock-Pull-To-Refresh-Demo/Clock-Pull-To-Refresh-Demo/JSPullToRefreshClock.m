@@ -1,6 +1,6 @@
 //
 //  GGPullToRefreshClock.m
-//  Merge
+//  Clock-Pull-To-Refresh
 //
 //  Created by Josh Sklar on 6/25/13.
 //  Copyright (c) 2013 Josh Sklar. All rights reserved.
